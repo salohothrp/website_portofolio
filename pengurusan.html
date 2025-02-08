@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Box dengan Animasi Mulus</title>
+  <!-- style -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- pengurusan -->
+   <link rel="stylesheet" href="/css/pengurusan.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <a href="/index/navbar.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Kembali
+    </a>
+    
+    <div class="container">
+        <h2>Program layanan Membantu Warga Dalam pengurusan adminstrasi Dasar Kependudukan</h2>
+        <div class="card" onclick="openModal('Akta Kelahiran')">
+            <img src="/img/pelayanan.jpeg" alt="Akta Kelahiran">
+            <p>Akta Kelahiran</p>
+        </div>
+        <div class="card" onclick="openModal('Kartu Keluarga')">
+            <img src="/img/pelayanan.jpeg" alt="Kartu Keluarga">
+            <p>Kartu Keluarga</p>
+        </div>
+        <div class="card" onclick="openModal('Kartu Tanda Penduduk')">
+            <img src="/img/pelayanan.jpeg" alt="Kartu Tanda Penduduk">
+            <p>Kartu Tanda Penduduk</p>
+        </div>
+        <div class="card" onclick="openModal('Kartu Identitas Anak')">
+            <img src="/img/pelayanan.jpeg" alt="Kartu Identitas Anak">
+            <p>Kartu Identitas Anak</p>
+        </div>
+        <div class="card" onclick="openModal('Akta Kematian')">
+            <img src="/img/pelayanan.jpeg" alt="Akta Kematian">
+            <p>Akta Kematian</p>
+        </div>
+        <div class="card" onclick="openModal('Surat Pindah')">
+            <img src="/img/pelayanan.jpeg" alt="Surat Pindah">
+            <p>Surat Pindah</p>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <!-- Popup Modal -->
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <h3>Persyaratan:</h3>
+            <ul id="modalRequirements"></ul>
+        </div>
+    </div>
+
+  <script src="/js/script.js"></script>
+  <script src="/js/pengurusan.js"></script>
+</body>
+</html>
